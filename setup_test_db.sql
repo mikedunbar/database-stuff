@@ -28,8 +28,11 @@ CREATE TABLE products
 id int NOT NULL AUTO_INCREMENT,
 name VARCHAR (255),
 description VARCHAR (255),
+price FLOAT (10,2),
 PRIMARY KEY (id)
 );
+
+CREATE INDEX product_name_index ON products (name)
 
 CREATE TABLE orders
 (
